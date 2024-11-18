@@ -1,0 +1,15 @@
+{
+  "name": "hax-site-analyzer",
+  "version": "1.0.0",
+  "description": "Site analyzer for HAX web projects",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2"
+  }
+}

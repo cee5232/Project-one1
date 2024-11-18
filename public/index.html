@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAX Site Analyzer</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <h1 id="headerTitle">HAX Site Analyzer</h1>
+    </header>
+    
+    <div class="input-group">
+      <input type="text" id="siteUrl" placeholder="https://haxtheweb.org/site.json">
+      <button onclick="analyzeSite()">Analyze</button>
+    </div>
+
+    <div id="siteInfo" class="site-info hidden">
+      <img id="siteLogo" alt="Site logo" class="logo">
+      <div class="metadata">
+        <h2 id="siteName"></h2>
+        <p id="siteDescription"></p>
+        <p>Theme: <span id="siteTheme"></span></p>
+        <p>Created: <span id="siteCreated"></span></p>
+        <p>Last updated: <span id="siteUpdated"></span></p>
+      </div>
+    </div>
+
+    <div id="pageGrid" class="page-grid"></div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
